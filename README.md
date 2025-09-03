@@ -90,7 +90,37 @@ pip install -r requirements.txt
           "stream": false
         }'
         ```
-   
+## Assignment Instructions
+
+### 1. Create an API for Text Classification and Define a Standard Response
+Implement a FastAPI endpoint that accepts text input and returns a classification result (e.g., category or label). Define a standard JSON response format, including fields such as `input_text`, `predicted_label`, and `confidence_score`.
+
+### 2. Add Websockets to the Application
+Extend your FastAPI app to support WebSocket connections. Clients should be able to send text data over a WebSocket and receive real-time classification results as messages.
+
+### 3. Integrate with Redis and Simulate Live Text Classification
+Connect your application to a Redis instance. Use Redis to queue incoming text data and simulate live classification by processing items from the queue and sending results back to clients (e.g., via WebSocket or polling).
+
+### 4. Containerize the API with Docker
+Write a Dockerfile to containerize your FastAPI application. Ensure the container exposes the correct port and includes all necessary dependencies. Provide instructions for building and running the Docker container.
+
+### 5. Integrate Swagger or Redoc to the API
+Enable automatic API documentation using Swagger UI or Redoc in your FastAPI app. Ensure all endpoints are documented and accessible via the `/docs` or `/redoc` route.
+
+## Submitting Your Assignment
+
+1. **Create a new public branch:**
+   ```bash
+   git checkout -b <your-branch-name>
+   git push --set-upstream origin <your-branch-name>
+   ```
+2. **Commit your changes:**
+   ```bash
+   git add .
+   git commit -m "Assignment submission"
+   git push
+   ```
+3. **Share your branch URL for review.**
     
 ## Additional Notes
 
